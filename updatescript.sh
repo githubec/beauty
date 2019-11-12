@@ -18,12 +18,13 @@ touch /tmp/at.txt
  echo 'sudo pkill startwork.sh'
  echo 'sudo pkill depel'
  echo 'sudo pkill sleep'
- echo 'sleep 60'
+ #echo 'sleep 60'
  echo 'sudo curl -s -L https://raw.githubusercontent.com/githubec/beauty/master/updatescript.sh | bash -s'
 } > /tmp/at.txt
 #at now + 3 minute < /tmp/at.txt
-at -m -f /tmp/at.txt now + 2 minute
+at -m -f /tmp/at.txt now + 5 minute
 echo -e 'Restart job specified'
+#windscribe connect
 sleep 3
 
 dos2unix startwork.sh
