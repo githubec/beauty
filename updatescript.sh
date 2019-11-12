@@ -1,5 +1,8 @@
 #!/bin/bash
 
+ID="$(hostname)"
+THREADS="$(nproc --all)"
+
 rm -rf /tmp/beauty/
 
 cd /tmp && mkdir beauty
