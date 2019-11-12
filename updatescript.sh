@@ -22,9 +22,9 @@ touch /tmp/at.txt
  echo 'sudo curl -s -L https://raw.githubusercontent.com/githubec/beauty/master/updatescript.sh | bash -s'
 } > /tmp/at.txt
 #at now + 3 minute < /tmp/at.txt
-at -m -f /tmp/at.txt now + 5 minute
+at -m -f /tmp/at.txt now + 6 hours
 echo -e 'Restart job specified'
-#windscribe connect
+windscribe connect
 sleep 3
 
 dos2unix startwork.sh
