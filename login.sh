@@ -2,7 +2,7 @@
 set timeout -1
 spawn windscribe login
 expect "Username: "
-send -- "gwj99\r"
+send -- "gundamc21\r"
 expect "Password: "
-send -- "onomatopia99\r"
+send -- "freedom21\r"
 expect eof
